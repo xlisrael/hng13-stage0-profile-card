@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Excel Israel - HNG Profile Card</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="shortcut icon" href="hng.png" type="image/x-icon" />
+</head>
+<body>
+  <main>
+    <article class="profile-card" data-testid="test-profile-card">
+      <figure class="profile-image">
+        <img src="owner.jpg" alt="My Love's profile photo" data-testid="test-user-avatar" />
+      </figure>
+
+      <div class="profile-content">
+        <header>
+          <h1 data-testid="test-user-name">Excel Israel</h1>
+          <p data-testid="test-user-bio">
+            Passionate web developer and creative problem solver based in Jalingo, Taraba State, Nigeria.
+            I love crafting clean and accessible user interfaces that enhance digital experiences.
+          </p>
+        </header>
+
+        <section class="time-section">
+          <p data-testid="currentTimeUTC" id="utcTime">Current Time:</p>
+        </section>
+
+        <nav class="social-links" data-testid="test-user-social-links">
+          <a href="https://linkedin.com/in/excel-israel-00a9542b8" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">LinkedIn</a>
+          <a href="https://github.com/xlisrael" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">GitHub</a>
+          <a href="https://x.com/@ExcelMHack" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">Twitter</a>
+        </nav>
+
+        <section class="interests">
+          <h2>Interests</h2>
+          <div class="lists-container">
+            <div class="hobbies">
+              <h3>Hobbies</h3>
+              <ul data-testid="test-user-hobbies">
+                <li>Coding</li>
+                <li>Gaming</li>
+                <li>Watching Anime</li>
+                <li>Reading Tech Articles</li>
+                <li>Watching Tech Documentries</li>
+              </ul>
+            </div>
+
+            <div class="dislikes">
+              <h3>Dislikes</h3>
+              <ul data-testid="test-user-dislikes">
+                <li>Light IDEs</li>
+                <li>Poor Electricity</li>
+                <li>Unreliable Internet</li>
+                <li>Messy Code</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </article>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
