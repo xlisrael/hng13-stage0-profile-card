@@ -1,47 +1,130 @@
-# Profile Card — HNG Stage 0
+# HNG Stage 1 — Multi-Page Web Application
 
-A small, responsive profile card web page created as the Stage 0 assignment for the **HNG Internship**.
-
----
-
-## 📖 Overview
-This repository contains a single-page static site that displays a profile card for **Excel Israel**.  
-It is built with plain **HTML**, **CSS**, and a small **JavaScript** file that dynamically shows the current UTC time.
-
-The project demonstrates basic front-end development skills, accessibility considerations, and responsive design principles.
+A continuation of my **HNG Internship Stage 0 project**, this task upgrades the single profile card into a **multi-page web application**.  
+It now includes an **About Me** page and a **Contact Us** page with form validation — all built with accessibility, responsiveness, and semantic HTML in mind.
 
 ---
 
-## ⚙️ Functionality
-- Displays a user’s profile card with name, bio, and interests.  
-- Shows live **UTC time** using JavaScript.  
-- Includes links to **social profiles** (LinkedIn, GitHub, Twitter).  
-- Fully **responsive layout** that adapts beautifully to mobile and desktop screens.  
-- Lightweight and **dependency-free** — works by simply opening `index.html` in a browser.
+## Overview
+This project showcases fundamental **frontend development skills** using **HTML**, **CSS**, and **JavaScript**.  
+It emphasizes:
+- Semantic HTML structure
+- Accessibility and keyboard navigation
+- Responsive design
+- Clean, maintainable code
+- Proper `data-testid` usage for testing
 
 ---
 
-## 📂 Files in this Project
-| File Name   | Description |
-|--------------|-------------|
-| **index.html** | The main page containing the profile card structure and markup. |
-| **styles.css** | Contains styles and layout rules for the profile card. |
-| **main.js** | Small JavaScript file for dynamic UTC time updates. |
-| **README.md** | This documentation file describing the project. |
+## Pages
+
+### Home Page
+The home page retains the **Stage 0 profile card** design, displaying:
+- Developer’s name, role, and bio  
+- Social links (GitHub, LinkedIn, Twitter)  
+- Live UTC time (updated dynamically via JavaScript)  
+- Consistent styling and theme from Stage 0  
+
+**File:** `index.html`  
+**TestID Example:** `data-testid="test-home-page"`
 
 ---
 
-## 🧰 Technologies Used
-- **HTML5**
-- **CSS3** (Flexbox / Grid, responsive rules)
-- **Vanilla JavaScript (ES6)**
+### About Me Page
+A reflective page that highlights my journey and insights in the HNG internship.  
+Each section is displayed inside a **dark-themed card** (not too dark for readability).  
+
+#### Required Sections:
+| Section | Test ID |
+|----------|----------|
+| Bio | `test-about-bio` |
+| Goals in the Program | `test-about-goals` |
+| Areas of Low Confidence | `test-about-confidence` |
+| Note to Future Self | `test-about-future-note` |
+| Extra Thoughts | `test-about-extra` |
+
+**Structure:**  
+- Wrapped inside `<main data-testid="test-about-page">`  
+- Each section uses `<section>` and proper `<h2>` or `<h3>` headings  
+
+**File:** `about.html`
 
 ---
+
+### Contact Us Page
+A form where users can send messages, built with **validation and accessibility best practices**.
+
+#### Form Fields:
+| Field | Test ID |
+|--------|----------|
+| Full Name | `test-contact-name` |
+| Email | `test-contact-email` |
+| Subject | `test-contact-subject` |
+| Message | `test-contact-message` |
+| Submit Button | `test-contact-submit` |
+| Error Message | `test-contact-error-<field>` |
+| Success Message | `test-contact-success` |
+
+#### Validation Rules:
+- All fields are **required**
+- Email must follow a **valid format** (e.g., `name@example.com`)
+- Message must be at least **10 characters long**
+- On valid submission → shows a **success message**
+
+**Accessibility:**
+- Each input linked to a `<label for="">`
+- Error messages tied via `aria-describedby`
+- Fully keyboard navigable
+
+**File:** `contact.html`
+
+---
+
+## Navigation
+A **persistent navigation bar** appears at the top of every page:
+- Links: **Home | About Me | Contact Us**
+- Highlights active page
+- Responsive layout (mobile, tablet, desktop)
+- Matches the visual theme from Stage 0
+
+**File:** Included in all pages (`<nav>` in header)
+
+---
+
+## Technologies Used
+- **HTML5** — for semantic structure  
+- **CSS3** — for styling and responsive layout  
+- **Vanilla JavaScript (ES6)** — for dynamic time & form validation  
+
+---
+
+## Design Theme
+The design maintains the **clean and elegant look** of Stage 0:
+- Simple color palette with soft dark tones  
+- Readable typography  
+- Smooth card shadows  
+- Fully responsive for all screen sizes  
+
+---
+
+## Accessibility & Testing
+- Semantic tags (`<main>`, `<section>`, `<nav>`, `<footer>`)  
+- Screen-reader-friendly with proper labels and ARIA attributes  
+- `data-testid` attributes for automated tests  
+- Validated through both HTML5 and JS  
+
+---
+
+## How to Run Locally
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/hng-stage1-multipage-app.git
+
 
 ## 🚀 How to Run
 1. Clone or download this repository:  
    ```bash
-   git clone https://github.com/yourusername/hng-stage0-profile-card.git
+   git clone https://github.com/yourusername/hng13-stage0-profile-card.git
 2. Open index.html in any modern web browser
 
 ## Author
