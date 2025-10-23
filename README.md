@@ -115,16 +115,10 @@ The design maintains the **clean and elegant look** of Stage 0:
 
 ---
 
-## How to Run Locally
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/hng-stage1-multipage-app.git
-
-
 ## 🚀 How to Run
 1. Clone or download this repository:  
    ```bash
-   git clone https://github.com/yourusername/hng13-stage0-profile-card.git
+   git clone https://github.com/xlisraelu/hng13-stage0-profile-card.git
 2. Open index.html in any modern web browser
 
 ## Author
