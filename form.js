@@ -41,10 +41,6 @@
       valid = false; 
     } else clearError("email");
 
-    if (!subject) { 
-      showError("subject", "Subject is required"); 
-      valid = false; 
-    } else clearError("subject");
 
     if (!message) { 
       showError("message", "Message is required"); 
